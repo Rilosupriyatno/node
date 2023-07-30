@@ -1,0 +1,50 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/la-belle-aurore": "^5.0.5",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.13.7",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "bulma": "^0.9.4",
+    "flowbite": "^1.7.0",
+    "flowbite-react": "^0.4.10",
+    "jwt-decode": "^3.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fontawesome-svg-icon": "^1.1.2",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.14.1",
+    "redux": "^4.2.1",
+    "swiper": "^10.0.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react": "^4.0.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.44.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.2",
+    "postcss": "^8.4.25",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.4.0"
+  }
+}

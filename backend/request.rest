@@ -1,0 +1,82 @@
+GET http://localhost:5000/users
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJSaWxvIiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2ODg4MjUxMDksImV4cCI6MTY4ODgyNTEyOX0.atr6zgC3G3S1BaqzjlF3ipEQdnDZORIplGDct3gw5II
+
+### Register
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Rilo",
+    "email": "rilo@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "admin"
+}
+### Register user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "david",
+    "email": "david@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "user"
+}
+
+### Check
+GET http://localhost:5000/me
+
+### Login admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"rilo@gmail.com",
+    "password": "12345"
+}
+### Login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"david@gmail.com",
+    "password": "12345"
+}
+
+####
+# GET  http://localhost:5000/token
+
+### logout
+DELETE http://localhost:5000/logout
+
+### delete
+DELETE http://localhost:5000/users/1
+
+### GameList
+GET http://localhost:5000/games
+### GameList 1
+GET http://localhost:5000/games/f1979860-1eb1-4848-9d1b-56ff0cbab103
+
+### Insert game
+POST http://localhost:5000/games
+Content-Type: application/json
+
+{
+    "name": "Assasin",
+    "develop": "Ubisoft",
+    "price": 200000
+}
+
+### Update game
+PATCH  http://localhost:5000/games/f1979860-1eb1-4848-9d1b-56ff0cbab103
+Content-Type: application/json
+
+{
+    "name": "Assasin",
+    "develop": "Ubisoft",
+    "price": 100000
+}
+
+### Delete game
+DELETE http://localhost:5000/games/f1979860-1eb1-4848-9d1b-56ff0cbab103
